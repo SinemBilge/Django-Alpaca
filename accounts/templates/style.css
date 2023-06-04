@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@font-face {
+  font-family: 'Atlantis Inline Grunge';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Atlantis Inline Grunge'), url('https://fonts.cdnfonts.com/s/19199/AtlantisInlineGrunge.woff') format('woff');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono";
+}
+
+html {
+  font-family: "Roboto Mono";
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+section {
+  justify-content: center;
+  text-align: center !important;
+}
+
+.titles {
+  padding-bottom: 50px;
+}
+
+.atlantis-symbol {
+  transform: translateY(-15px);
+  opacity: 80%;
+}
+
+#intro {
+  height: 91vh;
+  padding: 50px 10%;
+  background-image: url("img/intro_img.png");
+  background-color: #030c35;
+  background-position-x: center;
+  background-position-y: -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+#about, #team, #schedule, #faq, #contact, #sponsors, #speakers {
+  padding: 100px 10% !important;
+  z-index: 1;
+}
+
+.gradient {
+  background: linear-gradient(180deg, rgba(8,17,79,1) 0%, rgba(8,112,167,1) 50%, rgba(0,52,89,1) 100%);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #030c35;
+  z-index: 2;
+}
+
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+nav .container ul li {
+  display: inline-block;
+}
+
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #1E97D7;
+  font-size: 18px;
+  transition: 0.3s ease color;
+}
+
+nav .container ul li.active a, nav .container ul li a:not(nav .container ul li button a):hover {
+  transition: 0.3s ease color;
+  color: #91F9E6;
+  font-weight: bold;
+}
+
+#register-1 a, #register-2 a {
+  color: white !important;
+}
+
+#intro-txt {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#intro-txt-1 {
+  font-size: 90px;
+  font-family: 'Atlantis Inline Grunge';
+}
+
+#intro-txt-2 {
+  font-size: 48px;
+  font-family: 'Atlantis Inline Grunge';
+}
+
+#register-1 {
+  background-color: #3c89b3;
+  border-radius: 500px;
+  transition: background-color ease-in-out 0.3s;
+  z-index: 1;
+}
+
+#register-2 {
+  top: 2em;
+  position: relative;
+  background-color: #3c89b3;
+  font-size: 30px;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 500px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#register-2:hover, #register-1:hover {
+  background-color: #5d9abb;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#about-title, #sched-title, #team-title, #cont-title, #faq-title {
+  color: white;
+  font-size: 52px;
+}
+
+#about p {
+  font-size: 20px;
+  padding: 0px 50px 0px;
+}
+
+#theme {
+  font-size: 46px;
+  color: #91F9E6;
+}
+
+#atlantis-image {
+  background-color: royalblue;
+}
+
+#fish-image {
+  filter: brightness(70%) saturate(230%);
+  -webkit-filter: brightness(70%) saturate(230%);
+  -moz-filter: brightness(70%) saturate(230%);
+  position: absolute;
+  transform: translateY(-150px);
+  width: 75%;
+}
+
+#copyright {
+  font-size: 16px;
+  color: rgba(30, 151, 215, 70%);
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+#ft {
+  color: rgba(255, 255, 255, 50%);
+  font-size: 16px;
+  transition: 0.3s ease color;
+}
+
+#ft:hover {
+  color: rgba(255, 255, 255, 100%);
+  transition: 0.3s ease color;
+}
+
+#terms-content, #imprint-content, #privacy-content {
+  width: 100%;
+  height: 60vh;
+  /* padding-right: 0px; */
+}
+
+ul li:not(nav .container ul li) {
+  list-style: disc outside none;
+  display: list-item;
+  margin-left: 3em;
+}
+
+ol li {
+  list-style: decima;;
+  display: list-item;
+  margin-left: 3em;
+}
+
+#name {
+  color: rgba(255, 255, 255, 90%);
+  padding: 10px 0px 10px;
+  font-size: 20px;
+}
+
+#position {
+  color: #b5ccff;
+}
+
+#top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  /* z-index: 1; */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: none;
+  color: rgba(255, 255, 255, 60%);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: 0.3s ease background-color;
+}
+
+#top-btn:hover {
+  background-color: rgba(255, 255, 255, 20%);
+  transition: 0.3s ease background-color;
+}
+
+#sched-table table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrap-collapsible {
+  z-index: 1;
+}
+
+/* FAQ styles */
+input[type='checkbox'] { 
+  display: none; 
+} 
+
+.lbl-toggle { 
+  display: block; 
+  font-weight: bold; 
+  text-align: center; 
+  padding: 1rem; 
+  color: #DDD; 
+  background: #2c7fac; 
+  cursor: pointer; 
+  border-radius: .625rem; 
+  transition: all 0.25s ease-out; 
+} 
+
+.lbl-toggle:hover { 
+  color: #FFF; 
+} 
+
+.lbl-toggle::before { 
+  content: ' '; 
+  display: inline-block; 
+  border-top: 5px solid transparent; 
+  border-bottom: 5px solid transparent; 
+  border-left: 5px solid currentColor; 
+  vertical-align: middle; 
+  margin-right: .7rem; 
+  transform: translateY(-2px); 
+  transition: transform .2s ease-out; 
+} 
+
+.toggle:checked + .lbl-toggle::before { 
+  transform: rotate(90deg) translateX(-3px); 
+} 
+
+.collapsible-content { 
+  max-height: 0px; 
+  overflow: hidden; 
+  transition: max-height .25s ease-in-out; 
+} 
+
+.toggle:checked + .lbl-toggle + .collapsible-content { 
+  max-height: 100%; 
+} 
+
+.toggle:checked + .lbl-toggle { 
+  border-bottom-right-radius: 0; 
+  border-bottom-left-radius: 0; 
+} 
+
+.collapsible-content .content-inner {
+  background: #053768; 
+  border-bottom: 1px solid #2c7fac; 
+  border-bottom-left-radius: .625rem; 
+  border-bottom-right-radius: .625rem; 
+} 
+
+.collapsible-content p { 
+  padding: 20px;
+  font-size: 16px; 
+  color: white;
+  font-weight: 500;
+}
+
+#about-title, #theme, #sched-title, #team-title, #cont-title, #faq-title {
+  font-family: 'Atlantis Inline Grunge';
+}
+
+#imprint, #terms, #privacy {
+  z-index: -1;
+  display: none;
+}
+
+.sponsors-list img{
+  display: inline;
+  margin: 20px 30px;
+  max-height: 100px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  #intro-txt-1 {
+    font-size: 48px;
+  }
+  
+  #intro-txt-2 {
+    font-size: 20px;
+  }
+
+  #cont {
+    width: 95%;
+  }
+
+  #sched-table table {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
